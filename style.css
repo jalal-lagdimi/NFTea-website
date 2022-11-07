@@ -169,7 +169,7 @@ header{
 .buy-nft{
     margin-top: 50px;
     text-transform: uppercase;
-    color:rgb(255, 255, 255);
+    color:rgb(248, 231, 132);
     background: rgb(169, 70, 161);
     grid-column: span 1;
     transition: 0.5s;
@@ -191,7 +191,7 @@ header{
     grid-column: 2/4;
     text-align: center;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: rgb(248, 231, 132);
     background: rgb(169, 70, 161);
     height: 35px;
     transition: 0.5s;
