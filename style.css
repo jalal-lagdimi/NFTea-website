@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
     text-decoration: none;
 }
+body{
+    height: 1200px;
+    position: relative;
+}
 
 header{
     position: fixed;
@@ -33,6 +37,11 @@ header{
     height: 50px;
     margin-left: 30px;
  }
+ .footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+ }
  .footer-content {
     background-color: #003FFF;
     background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
@@ -40,7 +49,6 @@ header{
     background-size: cover;
     width: 100%;
     color: #fff;
-    position: absolute;
     bottom: 0px;
     display: flex;
     padding: 50px;
@@ -71,4 +79,102 @@ header{
     color:#fff;
     left: 35%;
     margin-bottom: 10px;
+}
+
+
+
+
+
+.container{
+    width: 98.8vw;
+    height: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #003FFF;
+    background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
+    background-attachment: fixed;   
+    background-size: cover;
+}
+.first{
+    display: grid;
+    grid-template-columns: repeat(3,320px);
+    padding-top: 180px;
+    gap: 4px;
+    margin-left: 90px;
+    
+}
+.des-buynft{
+    grid-column: span 1;
+    color: #fff;
+    font-size: 20px;
+}
+.buy{
+    color: #fff;
+    font-size: 50px;
+}
+.Second{
+    display: grid;
+    grid-template-columns: repeat(3,320px);
+    padding-top: 60px;
+    gap: 4px;
+    margin-left: 90px;
+}
+.sell-nfts{
+    font-size: 50px;
+    color: #fff;
+}
+.des-sell{
+    color: #fff;
+    font-size: 20px;
+}
+.bnt-pg1{
+    display: grid;
+    grid-template-columns: repeat(3,
+    140px);
+    padding-top: 0px;
+    padding-left: 19vw;
+    gap: 10px;
+    height: 35px;
+}
+.buy-nft{
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    background: rgb(169, 70, 161);
+    grid-column: span 1;
+    height: 35px;
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-image: repeating-linear-gradient(147deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(192deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(102deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(237deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),linear-gradient(192deg, rgb(80,72,155),rgb(149,45,127));
+}
+.buy-nft:hover{
+    letter-spacing: 0.25rem;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    border: 1px solid white;
+    color: #fff;
+
+}
+ 
+.learn-more{
+    margin-top: 50px;
+    grid-column: 2/4;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    background: rgb(169, 70, 161);
+    height: 35px;
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-image: repeating-linear-gradient(147deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(192deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(102deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(237deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),linear-gradient(192deg, rgb(80,72,155),rgb(149,45,127));
+}
+.learn-more:hover{
+    letter-spacing: 0.25rem;
+    border: 1px solid white;
+    color: #fff;
+    background: transparent;
 }
