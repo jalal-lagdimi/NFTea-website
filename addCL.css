@@ -3,18 +3,22 @@
     
 }
 body{
-    background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
+    background-image: url("./img/form-bg.jpeg");
     background-size: cover;
+    text-align: center;
 }
 head{
     position: fixed;
 }
+ .allform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
 .frm{
     width: 400px;
     height: 450px;
-    position: absolute;
-    left: 80px;
-    top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,19 +28,22 @@ head{
     background: #fff;
     box-shadow:  3px 3px 3px rgb(78, 4, 74);
 }
+::placeholder {
+    padding-left: 5px;
+  }
 
 .frm h1{
-    color: #000;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 50px;
 }
 .frm input{
-    border: 2px solid #de55c5; 
-    border-radius: 6px ;
+    border: 2px solid #a400e6; 
+    border-radius: 3px ;
     width: 230px;
     height: 30px;
 }
-.custom-file-upload{
-    background: #372734;
-}
+
 .frm .btn{
     text-transform: uppercase;
     font-weight: 400;
@@ -47,7 +54,7 @@ head{
     grid-column: span 1;
     transition: 0.5s;
     border: 1px solid #8f34df;
-    border-radius: 4px;
+    border-radius: 8px;
     background-image: repeating-linear-gradient(147deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(192deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(102deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(237deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),linear-gradient(192deg, rgb(80,72,155),rgb(149,45,127));
     width: 190px;
     height: 25px;
@@ -61,27 +68,12 @@ head{
     color: #000;
     background: transparent;
 }
+input[type="file"] {
+    
+    height: 30px;
+}
 .frm a{
     text-decoration: none;
     font-weight: 200;
-}
-@media (max-width: 550px){
-    body{
-        width: 390px;
-    }
-    .frm{
-        width: 300px;
-        height: 450px;
-        position: absolute;
-        left: 40px;
-        top: 90px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        border: 2px solid #372734;
-        border-radius: 8px;
-        background: #fff;
-        box-shadow:  3px 3px 3px rgb(78, 4, 74);
-    }
+    color: #000;
 }

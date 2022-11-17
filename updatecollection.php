@@ -34,9 +34,10 @@ if(isset($_POST['update_collection'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="addcl.css" rel="stylesheet">
+    <link href="addCL.css" rel="stylesheet">
 </head>
 <body>
+<div class="allform">
 <?php 
 
 if(isset($message)){
@@ -52,12 +53,12 @@ if(isset($message)){
 
 <form action="<?php $_SERVER['PHP_SELF']?>" method="POST" class="frm" enctype="multipart/form-data">
     <h1>UPDATE COLLECTION</h1>
-    <input type="text" placeholder="enter name" value=""<?php $row['nom']; ?> name="collection_name" > <br>
-    <input type="text" placeholder="enter artiste" value=""<?php $row['artiste']; ?> name="artiste_name" > <br>
+    <input type="text" placeholder="Enter new name" value=""<?php $row['nom']; ?> name="collection_name" > <br>
+    <input type="text" placeholder="enter new artiste name" value=""<?php $row['artiste']; ?> name="artiste_name" > <br>
     <input type="file" accept="image/jpeg, image/png image/jpg" value=""<?php $row['image']; ?> name="collection_image" > <br>
     <input type="submit" class="btn" name="update_collection" value="update collection" >
     <a href="index.php">GO BACK</a>
 </form>
-
+</div>
 </body>
 </html>

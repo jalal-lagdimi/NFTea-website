@@ -31,9 +31,10 @@ if(isset($_POST['add_collection'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link href="addcl.css" rel="stylesheet">
+    <link href="addCL.css" rel="stylesheet">
 </head>
 <body>
+    <div class="allform">
     <?php 
 
     if(isset($message)){
@@ -43,7 +44,7 @@ if(isset($_POST['add_collection'])){
     }
 
     ?>
-
+    
     <form action="<?php $_SERVER['PHP_SELF']?>" class="frm"
     method="POST" enctype="multipart/form-data">
     <h1>ADD NEW COLLECTION</h1>
@@ -53,5 +54,6 @@ if(isset($_POST['add_collection'])){
     <input type="submit" class="btn" name="add_collection" value="add collection" >
     <a href="index.php">GO BACK</a>
 </form>
+</div>
 </body>
 </html>

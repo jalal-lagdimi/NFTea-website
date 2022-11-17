@@ -32,10 +32,11 @@ if(isset($_POST['add_nft'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="addnft.css" rel="stylesheet">
     <title>Form</title>
 </head>
 <body>
-
+    <div class="allfomrnft">
     <?php 
 
     if(isset($message)){
@@ -51,7 +52,7 @@ if(isset($_POST['add_nft'])){
     ?>
 
 
-    <form action="<?php $_SERVER['PHP_SELF']?>" method="POST" enctype="multipart/form-data">
+    <form action="<?php $_SERVER['PHP_SELF']?>" method="POST" enctype="multipart/form-data" class="frm">
     <h1>ADD NEW NFT</h1>
     <input type="text" placeholder="enter name" name="nft_name" > <br>
     <input type="text" placeholder="enter description" name="description" > <br>
@@ -83,5 +84,6 @@ if(isset($_POST['add_nft'])){
     <input type="submit" name="add_nft" value="add nft" >
     <a href="index.php">GO BACK</a>
 </form>
+</div>
 </body>
 </html>
