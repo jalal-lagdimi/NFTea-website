@@ -12,15 +12,15 @@ if(isset($_POST['update_collection'])){
     $collection_image_folder = 'img/' .$collection_image;
 
     if(empty($collection_name) || empty($artiste_name) || empty($collection_image) ){
-       $message[]= 'please fill out all';
+       $message[]= 'PLEASE FILL OUT ALL';
     } else{
         $update = " UPDATE collection SET nom='$collection_name', artiste='$artiste_name', image='$collection_image' WHERE id=$id";
         $upload = mysqli_query($conn,$update);
         if($upload){
             move_uploaded_file( $collection_image_tmp_name, $collection_image_folder);
-            $message[]= 'new product added';
+            $message[]= 'UPDATE SUCCESSFULLY';
         } else{
-            $message[]= 'not added';
+            $message[]= 'UPDATE NOT ADDED';
         }
     }
 };
@@ -42,7 +42,7 @@ if(isset($_POST['update_collection'])){
 
 if(isset($message)){
     foreach($message as $message){
-        echo '<span>'.$message.'</span>';
+        echo '<span class="message">'.$message.'</span>';
     }
 }
 ?>

@@ -19,9 +19,9 @@ if(isset($_POST['add_nft'])){
         $upload = mysqli_query($conn,$insert);
         if($upload){
             move_uploaded_file( $nft_image_tmp_name, $nft_image_folder);
-            $message[]= 'new product added';
+            $message[]= 'new nft added successfully';
         } else{
-            $message[]= 'not added';
+            $message[]= 'new nft not added';
         }
     }
 };
@@ -36,19 +36,14 @@ if(isset($_POST['add_nft'])){
     <title>Form</title>
 </head>
 <body>
-    <div class="allfomrnft">
+    <div class="allform">
     <?php 
 
     if(isset($message)){
         foreach($message as $message){
-            echo '<span>'.$message.'</span>';
+            echo '<span class="message">'.$message.'</span>';
         }
     }
-    
-   
- 
-        
-
     ?>
 
 
@@ -58,7 +53,7 @@ if(isset($_POST['add_nft'])){
     <input type="text" placeholder="enter description" name="description" > <br>
     <input type="text" placeholder="enter prix" name="prix" > <br>
     <input type="file" accept="image/jpeg, image/png image/jpg" name="nft_image" > <br>
-    
+        <label >choose collection</label>
         <select name="select_collection" >
         <?php
 
@@ -72,16 +67,13 @@ if(isset($_POST['add_nft'])){
    
                     <?php
                 
-                }  
-            
-    
-            
+                }               
            
             ?>
             </select>
     
 
-    <input type="submit" name="add_nft" value="add nft" >
+    <input class="btn" type="submit" name="add_nft" value="add nft" >
     <a href="index.php">GO BACK</a>
 </form>
 </div>

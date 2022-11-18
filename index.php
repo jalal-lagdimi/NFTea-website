@@ -24,7 +24,7 @@
             <i class="bi bi-x-circle clo-ico" id="close"></i>
                  <li> <a href="index.php">HOME</a> </li>
                  <li> <a href="#collection">COLLECTION</a> </li>
-                 <li> <a href="#">STATISTICS</a> </li> 
+                 <li> <a href="statistic.php">STATISTICS</a> </li> 
             </ul>
             <i class="bi bi-list resp-ico" id="open"></i>
             
@@ -72,7 +72,7 @@
         
         <div class="box">
             <!-- <a href="#" class="btn-open">Open</a> -->
-            <a class="btn-open" href="NFTs.php?id=<?=$row['id']?>">Open</a>
+            <a class="btn-open" href="NFTs.php?id=<?=$row['id']?>">OPEN</a>
             <img src="img/<?= $row['image']?>" alt="image de collection">
             <h3><?= $row['nom']?></h3>
             <p><b><?= $row['artiste']?></b></p>

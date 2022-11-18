@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFTea</title>
-    <link rel="stylesheet" href="Collection.css" type="text/css">
+    <link rel="stylesheet" href="statistic.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <script defer src="main.js"></script>
-    <script defer src="./logic.js"></script>
-
+    
 </head>
 <body>
       <!--header--->
@@ -18,16 +16,41 @@
             <ul class="NAVBAR">
             <i class="bi bi-x-circle clo-ico" id="close"></i>
                  <li> <a href="index.php">HOME</a> </li>
-                 <li> <a href="#collection">COLLECTION</a> </li>
-                 <li> <a href="#">STATISTICS</a> </li> 
+                 <li> <a href="collection.php">COLLECTION</a> </li>
+                 <li> <a href="statistic.php">STATISTICS</a> </li> 
             </ul>
             <i class="bi bi-list resp-ico" id="open"></i>
             
     </header>
-
-
+    <section class="stc-num">
+        <img class="stc-img" src="IMG/Stc.jpg" alt="image statistique">
+        <div class="nfts-num">
+            <p>NFTS NUMBER</p>
+            <span>0</span>
+        </div>
+    </section>
+    <div class="titel"><h3>NFT STATISTIC</h3></div>
+    <section class="title-class">
+        <p>NFT PLUS CHAIR</p>
+        <p>NFT MOIN CHAIR</p>
+    </section>
+    <section class="nft-stc">
+        
+        <div class="nft-g">
+            <img src="img/BETCOIN 3.jpg" alt="image">
+            <h3>NOM</h3>
+            <p>the most ppulaire NFT</p>
+            <h4>PRIX</h4>
+        </div>
+        <div class="nft-s">
+            <img src="img/PARIS.jpg" alt="image">
+            <h3>NOM</h3>
+            <p>the most ppulaire NFT</p>
+            <h4>PRIX</h4>
+        </div>
+    </section>
      <!-- foooter -->
-     <footer >
+     <footer>
         <section class="footer">
             <div class="footer-content">
                 <div>
