@@ -9,6 +9,5 @@
    closebtn.addEventListener("click",()=>{
        navbarmobil.style.right = "-100%"; 
    })
-
-  
+ 
    

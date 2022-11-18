@@ -10,10 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFTea</title>
-    <link rel="stylesheet" href="Collection.css" type="text/css">
+    <link rel="stylesheet" href="./css/Collection.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script defer src="main.js"></script>
-    <script defer src="./logic.js"></script>
+    <script defer src="logic.js"></script>
 
 </head>
 <body>
