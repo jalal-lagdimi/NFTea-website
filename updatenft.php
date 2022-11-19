@@ -13,7 +13,7 @@ if(isset($_POST['update_nft'])){
     $nft_image_folder = 'img/' .$nft_image;
 
     if(empty($nft_name) || empty($nft_description) || empty($nft_prix) || empty($nft_image) ){
-       $message[]= 'PLEASE FILL OUT ALL';
+       $message[]= 'FILL OUT ALL';
     } else{
         $update = " UPDATE nft SET nom='$nft_name', description='$nft_description', prix='$nft_prix', image='$nft_image' WHERE id=$id";
         $upload = mysqli_query($conn,$update);

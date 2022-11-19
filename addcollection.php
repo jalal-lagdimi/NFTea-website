@@ -11,7 +11,7 @@ if(isset($_POST['add_collection'])){
     $collection_image_folder = 'img/' .$collection_image;
 
     if(empty($collection_name) || empty($artiste_name) || empty($collection_image) ){
-       $message[]= 'PLEASE FILL OUT ALL';
+       $message[]= 'FILL OUT ALL';
     } else{
         $insert = "INSERT INTO collection (nom,artiste,image) VALUES(' $collection_name','$artiste_name','$collection_image')";
         $upload = mysqli_query($conn,$insert);

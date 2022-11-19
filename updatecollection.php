@@ -12,7 +12,7 @@ if(isset($_POST['update_collection'])){
     $collection_image_folder = 'img/' .$collection_image;
 
     if(empty($collection_name) || empty($artiste_name) || empty($collection_image) ){
-       $message[]= 'PLEASE FILL OUT ALL';
+       $message[]= 'FILL OUT ALL';
     } else{
         $update = " UPDATE collection SET nom='$collection_name', artiste='$artiste_name', image='$collection_image' WHERE id=$id";
         $upload = mysqli_query($conn,$update);

@@ -24,8 +24,8 @@
             <ul class="NAVBAR">
                 <i class="bi bi-x-circle clo-ico" id="close"></i>
                  <li> <a href="index.php">HOME</a> </li>
-                 <li> <a href="#collection">COLLECTION</a> </li>
-                 <li> <a href="#">STATISTICS</a> </li> 
+                 <li> <a href="index.php">COLLECTION</a> </li>
+                 <li> <a href="statistic.php">STATISTICS</a> </li> 
             </ul>
                 <i class="bi bi-list resp-ico" id="open"></i>
     </header>
@@ -39,7 +39,7 @@
     </div>       
    </section>
   
-   <section id="collection">
+   <section >
    
     <div class="NFTs-body">
 
@@ -50,10 +50,11 @@
        ?>
         <div class="box-nft">
         <img src="img/<?= $val['image']?>" alt="image de nft">
-            <h3><?= $val['nom']?></h3> 
-            <p><?= $val['description']?></p>  
-            <h4><?= $val['prix']?></h4>  
-            <a href="deletenft.php?id=<?= $val['id']?>" name="deletenft" class="btn_remove-N">Remove</a>
+            <h3> NAME : <?= $val['nom']?></h3>
+            <!-- <h4>description :</h4>  -->
+            <p>description : <?= $val['description']?></p>  
+            <h4>PRICE : <?= $val['prix']?> Ethereum</h4>  
+            <a href="deletenft.php?id=<?=  $val['id']?>" name="deletenft" class="btn_remove-N">Remove</a>
             <a href="updatenft.php?id=<?= $val['id']?>" name="update" class="btn-update-N" >Update</a>
         </div>
         <?php }; ?>

@@ -13,15 +13,15 @@ if(isset($_POST['add_nft'])){
     $nft_image_folder = 'img/' .$nft_image;
 
     if(empty($nft_name) || empty($description) || empty($nft_image) || empty($id_collection) || empty($prix)  ){
-       $message[]= 'please fill out all';
+       $message[]= 'FILL OUT ALL';
     } else{
         $insert = "INSERT INTO nft (nom,description,prix,image,idcollection) VALUES('$nft_name','$description','$prix','$nft_image','$id_collection')";
         $upload = mysqli_query($conn,$insert);
         if($upload){
             move_uploaded_file( $nft_image_tmp_name, $nft_image_folder);
-            $message[]= 'new nft added successfully';
+            $message[]= 'NEW COLLECTION ADDED SUCCESSFULLY';
         } else{
-            $message[]= 'new nft not added';
+            $message[]= 'NEW COLLECTION NOT ADDED';
         }
     }
 };
@@ -51,7 +51,7 @@ if(isset($_POST['add_nft'])){
     <h1>ADD NEW NFT</h1>
     <input type="text" placeholder="enter name" name="nft_name" > <br>
     <input type="text" placeholder="enter description" name="description" > <br>
-    <input type="text" placeholder="enter prix" name="prix" > <br>
+    <input type="number" placeholder="Price (Ethereum)" name="prix" > <br>
     <input type="file" accept="image/jpeg, image/png image/jpg" name="nft_image" > <br>
         <label >choose collection</label>
         <select name="select_collection" >
