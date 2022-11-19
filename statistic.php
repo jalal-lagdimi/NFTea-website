@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFTea</title>
+
     <link rel="stylesheet" href="./css/statistic.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     
@@ -22,33 +23,42 @@
             <i class="bi bi-list resp-ico" id="open"></i>
             
     </header>
+
+    
     <section class="stc-num">
-        <img class="stc-img" src="IMG/Stc.jpg" alt="image statistique">
+        <h3>NFT STATISTICS</h3>
+    </section>
+    <div class="container-nft-num">
         <div class="nfts-num">
-            <p>NFTS NUMBER</p>
-            <span>0</span>
+                <p>NFTS NUMBER</p>
+                <span>0</span>
         </div>
-    </section>
-    <div class="titel"><h3>NFT STATISTIC</h3></div>
-    <section class="title-class">
-        <p>NFT PLUS CHAIR</p>
-        <p>NFT MOIN CHAIR</p>
-    </section>
+    </div>
+    
+    
+   
     <section class="nft-stc">
-        
-        <div class="nft-g">
-            <img src="img/BETCOIN 3.jpg" alt="image">
-            <h3>NOM</h3>
-            <p>the most ppulaire NFT</p>
-            <h4>PRIX</h4>
+        <div class="box-nftg">
+            <div class="nft-start">NFT MOST EXPANSIVE</div>
+            <div class="nft-g">
+                <img src="img/BETCOIN 3.jpg" alt="image">
+                <h3>NOM</h3>
+                <p>the most ppulaire NFT</p>
+                <h4>PRIX</h4>
+            </div>
         </div>
-        <div class="nft-s">
-            <img src="img/PARIS.jpg" alt="image">
-            <h3>NOM</h3>
-            <p>the most ppulaire NFT</p>
-            <h4>PRIX</h4>
-        </div>
-    </section>
+        <div class="box-nftg">
+            <div class="nft-start">NFT MOST EXPANSIVE</div>
+            <div class="nft-s">
+                <img src="img/PARIS.jpg" alt="image">
+                <h3>NOM</h3>
+                <p>the most ppulaire NFT</p>
+                <h4>PRIX</h4>
+            </div>
+        </div>-
+    </section> 
+
+    
      <!-- foooter -->
      <footer>
         <section class="footer">
@@ -80,7 +90,13 @@
             <div class="copyright">
                 <p>© Copyright 2022 Desgined. All Rights Reserved.</p>
             </div>  
-        </section> 
+        </section>
+    </footer> 
+    <script src="logic.js"></script> 
+</body>
+</html>
+
     </footer>  
 </body>
 </html>
+

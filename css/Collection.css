@@ -107,7 +107,8 @@ header .clo-ico{
     margin-bottom: 140px;
  }
 .box{
-    width: 355px;
+    width: 350px;
+    height: 440px;
     border: 2px solid #8f34df;
     border-radius: 4px; 
     position:relative;

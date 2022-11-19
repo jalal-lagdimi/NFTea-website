@@ -9,7 +9,7 @@
   
 }
 body{
-
+  min-height: 100vh;
   overflow-x: hidden;
   background: #350c39;
 
@@ -59,7 +59,10 @@ header .clo-ico{
 header .resp-ico{
   display: none;
 }
-
+footer{
+  position: sticky;
+  top: 100%;
+}
 .footer{
   width: 100%;
   background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
@@ -225,11 +228,7 @@ header .resp-ico{
 
 
 @media screen and (max-width: 1150px){
-.containerr{
-  background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
-  height: 50vh;
-  width: 100%;
-}
+
 .NFT-content h3{
   width: 300px ;
   font-size: 50px;
@@ -242,6 +241,26 @@ header .resp-ico{
 
 }
 }
+
+@media screen and (max-width: 1010px){
+  .foooter-content h3{
+    font-size: 18px;
+  }
+  .footer-content img {
+    width: 94px;
+    height: 143px;
+  }
+  .footer-content h3 {
+  
+    width: 122px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .footer-content p {
+    font-size: 14px;
+  }
+  
+}
 @media screen and (max-width: 1000px){
   .NFT-content{
     display: block;
@@ -250,22 +269,8 @@ header .resp-ico{
     position: absolute;
     right: 50%;
   }
-  .containerr{
-    width: 100%;
-  }
 }
-@media screen and (max-width: 940px){
-  .footer{
-    margin-top: 60px;
-    width: 100%;
-}
- 
-.footer-content {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}}
+
 @media screen and (max-width: 850px){
 
   .NFT-content h3{
@@ -301,6 +306,17 @@ header .resp-ico{
   .NFTs-body{
     margin-left: 30%;
   }
+  .footer-content {
+    width: 100%;
+    gap: 20px;
+}
+.footer-content img {
+    width: 68px;
+    height: 143px;
+}
+.info {
+    height: 321px;
+}
 }
 
 @media screen and (max-width: 650px) {
@@ -345,7 +361,19 @@ header .resp-ico{
     width: 100%;
   }
 }
+@media screen and (max-width: 550px) {
+  footer{
+    margin-top: 43px;
+    position: relative;
+    width: 100%;
+  }
+  .footer-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
 
+}
 @media screen and (max-width: 500px) {
   .NFT-content h3{
     width: 200px ;
