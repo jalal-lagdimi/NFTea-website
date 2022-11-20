@@ -14,7 +14,7 @@ body{
   background: #350c39;
 
 }
-/* HEADER */
+/* ****************** HEADER ****************** */
 header{
   position: fixed;
   float: right;
@@ -59,6 +59,8 @@ header .clo-ico{
 header .resp-ico{
   display: none;
 }
+
+/* ************************ ABOUT FOOTER ******************** */
 footer{
   position: sticky;
   top: 100%;
@@ -114,6 +116,7 @@ footer{
   
 }
 
+ /* ******************* NFTS BODY ******************* */
 .NFTs-body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, auto));

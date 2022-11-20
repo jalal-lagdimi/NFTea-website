@@ -112,19 +112,19 @@ header .resp-ico{
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 200px;
+  gap: 100px;
  }
  .nftg{
-   color: #CFB53B;
+   color: #ffffff;
    margin-bottom: 20Px;
    font-weight: bold;
-   font-size: 28px;
+   font-size: 25px;
  }
  .nfts{
-  color: #88289e;
+  color: #ffffff;
   margin-bottom: 20Px;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 25px;
 }
  .nft-g{
    width: 385px;
@@ -142,6 +142,15 @@ header .resp-ico{
   width: 377px;
   height: 435px;
  }
+ .nft-g h3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+ .nft-s h3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+
 
  .nft-s{
   width: 385px;
