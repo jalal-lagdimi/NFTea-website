@@ -51,7 +51,6 @@
         <div class="box-nft">
         <img src="img/<?= $val['image']?>" alt="image de nft">
             <h3> NAME : <?= $val['nom']?></h3>
-            <!-- <h4>description :</h4>  -->
             <p>description : <?= $val['description']?></p>  
             <h4>PRICE : <?= $val['prix']?> Ethereum</h4>  
             <a href="deletenft.php?id=<?=  $val['id']?>" name="deletenft" class="btn_remove-N">Remove</a>

@@ -39,18 +39,18 @@
    
     <section class="nft-stc">
         <div class="box-nftg">
-            <div class="nft-start">NFT MOST EXPANSIVE</div>
+            <div class="nftg">MOST EXPENSIVE NFT</div>
             <div class="nft-g">
-                <img src="img/BETCOIN 3.jpg" alt="image">
+                <img src="img/crystal1.jpg" alt="image">
                 <h3>NOM</h3>
                 <p>the most ppulaire NFT</p>
                 <h4>PRIX</h4>
             </div>
         </div>
         <div class="box-nftg">
-            <div class="nft-start">NFT MOST EXPANSIVE</div>
+            <div class="nfts">CHEAPEST NFT</div>
             <div class="nft-s">
-                <img src="img/PARIS.jpg" alt="image">
+                <img src="img/crystal2.jpg" alt="image">
                 <h3>NOM</h3>
                 <p>the most ppulaire NFT</p>
                 <h4>PRIX</h4>
