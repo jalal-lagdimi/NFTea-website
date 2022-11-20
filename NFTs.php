@@ -1,13 +1,14 @@
-<?php 
+<?php
 
-  @include 'connect.php';
-  $coln = $_GET['id'];
-  $select = mysqli_query($conn,"SELECT * FROM nft WHERE idcollection = $coln");
+@include 'connect.php';
+$coln = $_GET['id'];
+$select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");
 
-  ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,48 +18,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 </head>
+
 <body>
-      <!--header--->
-      <header>
+    <!--header--->
+    <header>
         <a href="index.html" class="logo"><img src="./img/LOGO" alt="logo"></a>
-            <ul class="NAVBAR">
-                <i class="bi bi-x-circle clo-ico" id="close"></i>
-                 <li> <a href="index.php">HOME</a> </li>
-                 <li> <a href="index.php">COLLECTION</a> </li>
-                 <li> <a href="statistic.php">STATISTICS</a> </li> 
-            </ul>
-                <i class="bi bi-list resp-ico" id="open"></i>
+        <ul class="NAVBAR">
+            <i class="bi bi-x-circle clo-ico" id="close"></i>
+            <li> <a href="index.php">HOME</a> </li>
+            <li> <a href="index.php">COLLECTION</a> </li>
+            <li> <a href="statistic.php">STATISTICS</a> </li>
+        </ul>
+        <i class="bi bi-list resp-ico" id="open"></i>
     </header>
 
     <!--PAGE NFTs-->
     <section class="containerr">
-       <div class="NFT-content">
+        <div class="NFT-content">
             <h3>OUR NFTs</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis omnis accusamus,eius laboriosam beatae. Rerum pariatur hic optio, quam assumenda .</p>
-        </div>      
-    </div>       
-   </section>
-  
-   <section >
-   
-    <div class="NFTs-body">
-
-    <?php       
-       
-       while($val= mysqli_fetch_assoc($select)){
-
-       ?>
-        <div class="box-nft">
-        <img src="img/<?= $val['image']?>" alt="image de nft">
-            <h3> NAME : <?= $val['nom']?></h3>
-            <p>description : <?= $val['description']?></p>  
-            <h4>PRICE : <?= $val['prix']?> Ethereum</h4>  
-            <a href="deletenft.php?id=<?=  $val['id']?>" name="deletenft" class="btn_remove-N">Remove</a>
-            <a href="updatenft.php?id=<?= $val['id']?>" name="update" class="btn-update-N" >Update</a>
         </div>
-        <?php }; ?>
-    </div>
-   </section>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="NFTs-body">
+
+            <?php
+
+            while ($val = mysqli_fetch_assoc($select)) {
+
+            ?>
+                <div class="box-nft">
+                    <img src="img/<?= $val['image'] ?>" alt="image de nft">
+                    <h3> NAME : <?= $val['nom'] ?></h3>
+                    <p>description : <?= $val['description'] ?></p>
+                    <h4>PRICE : <?= $val['prix'] ?> Ethereum</h4>
+                    <a href="deletenft.php?id=<?= $val['id'] ?>" name="deletenft" class="btn_remove-N">Remove</a>
+                    <a href="updatenft.php?id=<?= $val['id'] ?>" name="update" class="btn-update-N">Update</a>
+                </div>
+            <?php }; ?>
+        </div>
+    </section>
 
 
 
@@ -66,12 +68,12 @@
 
 
     <!-- foooter -->
-    <footer >
+    <footer>
         <section class="footer">
             <div class="footer-content">
                 <div>
                     <H3>NFTea</H3>
-                    <p>Lorem ipsum dolor sit amet adipisicing elit. <br> Lorem ipsum dolor sit amet adipisicing. <br> Aliquam sapiente ipsum suscipit  <br> Sequi dicta.</p>
+                    <p>Lorem ipsum dolor sit amet adipisicing elit. <br> Lorem ipsum dolor sit amet adipisicing. <br> Aliquam sapiente ipsum suscipit <br> Sequi dicta.</p>
                 </div>
                 <div>
                     <h3>Navigation</h3>
@@ -95,9 +97,10 @@
             </div>
             <div class="copyright">
                 <p>© Copyright 2022 Desgined. All Rights Reserved.</p>
-            </div>  
-        </section> 
-    </footer>  
+            </div>
+        </section>
+    </footer>
     <script src="logic.js"></script>
 </body>
+
 </html>
