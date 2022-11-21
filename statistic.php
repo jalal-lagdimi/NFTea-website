@@ -32,7 +32,7 @@ $data = mysqli_fetch_assoc($total);
 <body>
     <!--header--->
     <header>
-        <a href="index.html" class="logo"><img src="./img/LOGO" alt="logo"></a>
+        <a href="index.php" class="logo"><img src="./img/LOGO" alt="logo"></a>
         <ul class="NAVBAR">
             <i class="bi bi-x-circle clo-ico" id="close"></i>
             <li> <a href="index.php">HOME</a> </li>
