@@ -54,7 +54,7 @@ if (isset($_POST['update_nft'])) {
         $row = mysqli_fetch_assoc($select);
         ?>
 
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" class="frm">
+        <form action="" method="POST" enctype="multipart/form-data" class="frm">
             <h1>UPDATE NFT</h1>
             <input type="text" placeholder="enter new name" value="" <?php $row['nom']; ?> name="nft_name"> <br>
             <input type="text" placeholder="enter new description" value="" <?php $row['description']; ?> name="nft_description"> <br>

@@ -70,12 +70,10 @@ $select = mysqli_query($conn, "SELECT * FROM collection");
 
             ?>
                 <div class="box">
-                    <!-- <a href="#" class="btn-open">Open</a> -->
                     <a class="btn-open" href="NFTs.php?id=<?= $row['id'] ?>">OPEN</a>
                     <img src="img/<?= $row['image'] ?>" alt="image de collection">
                     <h3> <?= $row['nom'] ?></h3>
                     <p>ARTISTE : <b><?= $row['artiste'] ?></b></p>
-
                     <a href="deletecollection.php?id=<?= $row['id'] ?>" name="delete" class="btn_remove-C">Remove</a>
                     <a href="updatecollection.php?id=<?= $row['id'] ?>" name="update" class="btn-update-C">Update</a>
                 </div>

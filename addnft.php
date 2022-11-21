@@ -48,7 +48,7 @@ if (isset($_POST['add_nft'])) {
         ?>
 
 
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" class="frm">
+        <form action=" " method="POST" enctype="multipart/form-data" class="frm">
             <h1>ADD NEW NFT</h1>
             <input type="text" placeholder="enter name" name="nft_name"> <br>
             <input type="text" placeholder="enter description" name="description"> <br>

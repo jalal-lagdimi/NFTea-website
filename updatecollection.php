@@ -52,7 +52,7 @@ if (isset($_POST['update_collection'])) {
         $row = mysqli_fetch_assoc($select);
         ?>
 
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" class="frm" enctype="multipart/form-data">
+        <form action="" method="POST" class="frm" enctype="multipart/form-data">
             <h1>UPDATE COLLECTION</h1>
             <input type="text" placeholder="Enter new name" value="" <?php $row['nom']; ?> name="collection_name"> <br>
             <input type="text" placeholder="enter new artiste name" value="" <?php $row['artiste']; ?> name="artiste_name"> <br>

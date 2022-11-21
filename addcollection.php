@@ -47,7 +47,7 @@ if (isset($_POST['add_collection'])) {
 
         ?>
 
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" class="frm" method="POST" enctype="multipart/form-data">
+        <form action="" class="frm" method="POST" enctype="multipart/form-data">
             <h1>ADD NEW COLLECTION</h1>
             <input type="text" placeholder="Enter collection name" name="collection_name"> <br>
             <input type="text" placeholder="Enter artiste name" name="artiste_name"> <br>
