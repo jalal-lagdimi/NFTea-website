@@ -15,7 +15,7 @@ body{
     margin: 0px;
     overflow-x: hidden;
 }
- /* HEADER */
+ /************* HEADER ************/
 header{
     position: fixed;
     width: 100%;
@@ -25,7 +25,6 @@ header{
     align-items: center;
     background-color: #003FFF;
     background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
-    
     z-index: 2;
  }
  header ul{
@@ -33,7 +32,6 @@ header{
     justify-content: center;
     align-items: center; 
     list-style: none;
-
  }
  header ul li a{
     padding: 60px;
@@ -54,20 +52,163 @@ header{
     border-radius: 30px;
     
  }
+ header .clo-ico{
+    display: none;
+  }
+ header .resp-ico{
+    display: none;
+  }
  .bnt-pg1 {
     display: grid;
-    grid-template-columns: repeat(2, 140px);
-    margin-left: 12vw;
+    grid-template-columns: repeat(2, 140px); 
+    /* Relative to 12% of the width of the viewport */
+    margin-left: 12vw; 
     gap: 10px;
     width: 450Px;
 }
-header .clo-ico{
+ 
+/**********  HEADER CONTENT **************/
+.container{
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #003FFF;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../img/test.jpg); 
+    background-size: cover;
+}
+.first{
+    display: grid;
+    grid-template-columns: repeat(3,320px);
+    padding-top: 100px;
+    gap: 4px;
+    margin-left: 70px;
+}
+.des-buynft{
+    grid-column: span 1;
+    color: #fff;
+    font-size: 20px;  
+}
+.buy{
+    color: #fff;
+    font-size: 50px;
+    border-left: 4px solid rgb(213, 61, 206);
+    border-top: 4px solid rgb(213, 61, 206);
+}
+.Second{
+    display: grid;
+    grid-template-columns: repeat(3,320px);
+    padding-top: 50px;
+    gap: 4px;
+    margin-left: 70px;
+}
+.sell-nfts{
+    font-size: 50px;
+    color: #fff;
+    border-right: 4px solid rgb(213, 61, 206);
+    border-top: 4px solid rgb(213, 61, 206);
+}
+.des-sell{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 1px;
+}
+.bnt-pg1{
+    display: grid;
+    grid-template-columns: repeat(3,140px);
+    margin-left: 12vw;
+    gap: 10px;
+}
+.buy-nft{
+    margin-top: 50px;
+    text-transform: uppercase;
+    color:rgb(70, 168, 203);
+    background: rgb(169, 70, 161);
+    grid-column: span 1;
+    transition: 0.5s;
+    border: 1px solid rgb(7, 158, 204);
+    border-radius: 8px;
+    background-image: repeating-linear-gradient(147deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(192deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(102deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(237deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),linear-gradient(192deg, rgb(80,72,155),rgb(149,45,127));
+}
+.buy-nft:hover{
+    letter-spacing: 0.25rem;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    border: 1px solid white;
+    color: #fff;
+
+}
+ 
+.learn-more{
+    margin-top: 50px;
+    grid-column: 2/3;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(70, 168, 203);
+    background: rgb(169, 70, 161);
+    height: 35px;
+    transition: 0.5s;
+    border: 1px solid rgb(7, 158, 204);
+    border-radius: 8px;
+    background-image: repeating-linear-gradient(147deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(192deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(102deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(237deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),linear-gradient(192deg, rgb(80,72,155),rgb(149,45,127));
+}
+.learn-more:hover{
+    letter-spacing: 0.25rem;
+    border: 1px solid white;
+    color: #fff;
+    background: transparent;
+}
+  /************** BOUTTON OPEN JS ************/
+.btn-open{
+    position: absolute;
+    left: 100px;
+    top: 190Px;
+    font-size: xx-large;
+    color: rgb(255, 254, 255);
+    width: 130px;
+    height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:transparent;
+    border-radius: 6px ;
+    border: 3px solid rgb(86, 19, 96);
+    letter-spacing: 4.3px;
     display: none;
-  }
-  header .resp-ico{
-    display: none;
-  }
- /*----content colection------*/
+    width: 130px;
+    height: 46px;
+}
+.active-tbn{
+    display: block;
+}
+ /*----------  CONTENT COLLECTION   ---------*/
+ section h2{
+    text-align: center;
+    margin: 50px auto 10px auto;
+    color: #fff;
+ }
+  /* ADD COOLECTION BTN */
+  .add-collection{
+    font-size:  30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.add-collection button{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(77, 1, 78);
+    color: #ffff;
+    border: 1px solid rgb(251, 0, 255);
+    transition: 1.9s;
+    border-radius: 5px;
+}
+.add-collection button:hover{
+    transform: scale(1.2,1.3);
+    color: #ffffff;
+    background-color: rgb(255, 0, 221);
+}
+  /* ADD NFT BTN */
+
  .add-nft{
     font-size: 40px;
     text-align: center;
@@ -88,23 +229,15 @@ header .clo-ico{
     color: #ffffff;
     background-color: rgb(255, 0, 221);
 }
- section-place{
-    width: 90%;
-}
- section h2{
-    text-align: center;
-    margin-top: 50px;
-    color: #fff;
- }
  .content-box{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(360px,auto));
     row-gap: 50px;
-    column-gap: 0px;
-    margin-top: 20px;
-    margin-left: 76px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 14px;
+    margin: 63px auto 140px auto;
     width: 90%;
-    margin-bottom: 140px;
  }
 .box{
     width: 350px;
@@ -116,23 +249,21 @@ header .clo-ico{
     cursor: pointer;
     overflow: hidden;
 }
+.box:hover{
+    transform: scale(1.1,1.1);
+    border: 3px solid rgb(255, 255, 255);
+    }
 .box img{
     width: 350px;
     height: 450px;
     border-radius: 4px;
 }
-
-.box:hover{
-transform: scale(1.1,1.1);
-border: 3px solid rgb(255, 255, 255);
-}
-
 .box h3{
     color: #ffffff;
     position: absolute;
     top: 4px;
     left: 4px;
-    background-color: #a200ff;
+    background-color: #792aa7;
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 5px;
@@ -145,7 +276,7 @@ border: 3px solid rgb(255, 255, 255);
     z-index: 1;
     font-size: 16px;
     font-weight: bold;
-    background-color: #a200ff;
+    background-color: #792aa7;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 2.5px;
@@ -174,8 +305,7 @@ border: 3px solid rgb(255, 255, 255);
     height: 25px;
     margin-bottom: 10px;
     margin-left: 4px;
-    padding-top: 3px;
-    
+    padding-top: 3px; 
 }
 .box .btn_remove-C:hover{
     letter-spacing: 0.25rem;
@@ -210,54 +340,45 @@ border: 3px solid rgb(255, 255, 255);
     color: #fff;
     background: transparent;
 }
-/*--------Service('HEADING')--------*/
-.heading h3:before{
-    content: '';
-    background: linear-gradient(90deg, rgba(72,252,139,0) 0%,#48fc8b 50%, rgba(72,252, 139, 0) 100%
-    );
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -0,5em;
-    width: 100%;
-    height: 0.1em;
-    margin-top: -10px;
+/*--------------  Service('HEADING')  ------------*/
+.service{
+    text-align: center;
 }
-.service .heading{
-    display: grid;
-    grid-template-columns: 200px 1000px;
-    column-gap:250px;
-    padding-top: 40px;
-    margin: 80px auto;
+.img-break{
+    width: 90%;
+ }
+ .heading{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 88px auto;
     color: #fff;
-}
-.service img {
-    margin-left: 125px;
-    width: 80%;
-}
+ }
 .heading h3{
     margin: 0px;
     padding: 0px;
     width: 200px;
-    margin-left: 50px;
     font-size: 32px;
 }
 .heading p{
-    width: 54%;
+    width: 89%;
     font-size: 20px;
-    
 }
-
-/*--------Service('Card')--------*/
+/*-----------  Service('Card')  ----------*/
 .cards{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1.5em;
     margin: 1em 0 4em 0;
 }
 .card{
     padding: 1em;
+    justify-content: center;
     text-align: center;
     border: 2px solid #e87ff1;
     border-radius: 8PX;
@@ -270,39 +391,33 @@ border: 3px solid rgb(255, 255, 255);
     transform: scale(1.1,1.1);
     border: 2px solid #ffffff;
 }
-
 .card img{
     width: 220px;
     margin: 0px;
 }
 .card h3{
     color: #fff;
-    padding-bottom: 8px;
+    padding-bottom: 19px;
 }
 .card p{
     width: 256px;
     text-align: center;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
 }
 /*------Infos------*/
-.info
-{
-    height: 500px;
-}
 .info-nft{
     display: grid;
-    grid-template-columns: repeat(2,548px);
-    column-gap: 60px;
-    margin: 0px 50px;
+    grid-template-columns: repeat(2,406px);
+    justify-content: center;
+    column-gap: 122px;
+    margin-bottom: 100px; 
 }
 .info-nft img {
         height: 300px;
         grid-column: 2/3;
-        margin-left: 40px;
-        margin-top: 50px;
+        margin-top: 96px;
 }
-
 .info-nft p{
     font-size: 20px;
     font-weight: 60;
@@ -311,9 +426,9 @@ border: 3px solid rgb(255, 255, 255);
     letter-spacing: 2px;
     margin-top: 100px;
     margin-left:10px;
-
 }
-  /* FOOTER */
+
+  /************* FOOTER ***************/
   footer{
     width: 100%;
 }
@@ -325,7 +440,6 @@ border: 3px solid rgb(255, 255, 255);
  .footer-content {
     background-color: #003FFF;
     background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
-    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     color: #fff;
@@ -365,166 +479,36 @@ border: 3px solid rgb(255, 255, 255);
     text-align: center;
     color:#fff;
     left: 35%;
-    padding-bottom: 12px;
-    
+    padding-bottom: 12px;  
 }
 
- /* OUR COOLECTION BTN */
- .add-collection{
-    font-size:  30px;
-    text-align: center;
-    margin-bottom: 5px;
-}
-.add-collection button{
-    width: 200px;
-    height: 30px;
-    background-color: rgb(77, 1, 78);
-    color: #ffff;
-    border: 1px solid rgb(251, 0, 255);
-    transition: 1.9s;
-    border-radius: 5px;
-}
-.add-collection button:hover{
-    transform: scale(1.2,1.3);
-    color: #ffffff;
-    background-color: rgb(255, 0, 221);
-}
-
-
-
-
-  /* HEADER CONTENT */
-.container{
-    width: 100%;
-    height: 610px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: #003FFF;
-    background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
-    /* background-attachment: fixed;    */
-    background-size: cover;
-}
-.first{
-    display: grid;
-    grid-template-columns: repeat(3,320px);
-    padding-top: 200px;
-    gap: 4px;
-    margin-left: 70px;
-}
-.des-buynft{
-    grid-column: span 1;
-    color: #fff;
-    font-size: 20px;
-    
-}
-.buy{
-    color: #fff;
-    font-size: 50px;
-    border-left: 4px solid rgb(7, 158, 204);
-    border-top: 4px solid rgb(7, 158, 204);
-}
-.Second{
-    display: grid;
-    grid-template-columns: repeat(3,320px);
-    padding-top: 50px;
-    gap: 4px;
-    margin-left: 70px;
-}
-.sell-nfts{
-    font-size: 50px;
-    color: #fff;
-    border-right: 4px solid rgb(7, 158, 204);
-    border-top: 4px solid rgb(7, 158, 204);
-}
-.des-sell{
-    color: #fff;
-    font-size: 20px;
-    padding-left: 1px;
-}
-.bnt-pg1{
-    display: grid;
-    grid-template-columns: repeat(3,
-    140px);
-    margin-left: 12vw;
-    gap: 10px;
-}
-.btn-open{
-    position: absolute;
-    left: 100px;
-    top: 190Px;
-    font-size: xx-large;
-    color: rgb(255, 254, 255);
-    width: 130px;
-    height: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background:transparent;
-    border-radius: 6px ;
-    border: 3px solid rgb(86, 19, 96);
-    letter-spacing: 4.3px;
-    display: none;
-    width: 130px;
-    height: 46px;
-}
-.active-tbn{
-    display: block;
-}
-.buy-nft{
-    margin-top: 50px;
-    text-transform: uppercase;
-    color:rgb(248, 231, 132);
-    background: rgb(169, 70, 161);
-    grid-column: span 1;
-    transition: 0.5s;
-    border: 1px solid rgb(7, 158, 204);
-    border-radius: 8px;
-    background-image: repeating-linear-gradient(147deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(192deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(102deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(237deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),linear-gradient(192deg, rgb(80,72,155),rgb(149,45,127));
-}
-.buy-nft:hover{
-    letter-spacing: 0.25rem;
-    background: var(--clr);
-    box-shadow: 0 0 35px var(--clr);
-    border: 1px solid white;
-    color: #fff;
-
-}
- 
-.learn-more{
-    margin-top: 50px;
-    grid-column: 2/3;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(248, 231, 132);
-    background: rgb(169, 70, 161);
-    height: 35px;
-    transition: 0.5s;
-    border: 1px solid rgb(7, 158, 204);
-    border-radius: 8px;
-    background-image: repeating-linear-gradient(147deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(192deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(102deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(237deg, rgba(222,235,40, 0) 0px, rgba(222,235,40, 0) 1px,transparent 1px, transparent 11px,rgba(222,235,40, 0) 11px, rgba(222,235,40, 0) 12px,transparent 12px, transparent 32px),linear-gradient(192deg, rgb(80,72,155),rgb(149,45,127));
-}
-.learn-more:hover{
-    letter-spacing: 0.25rem;
-    border: 1px solid white;
-    color: #fff;
-    background: transparent;
-}
-.header-img img{
-    margin-left: 450%;
-    margin-top: -260%;
-}
-
-@media (max-width: 1040px)
-{
-    
-    .container{
-        width: 100%;
-        position: relative;
-        height: 65vh;
+@media (max-width: 1212px){
+    /* collection box */
+    .content-box{
+        grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    }    
+    .box{
+        width: 280px;
     }
+    .box img{
+        width: 275px;
+    }
+    .box .btn-update-C {
+        position: absolute;
+        left: 35px;
+    }
+    .box .btn_remove-C {
+        position: absolute;
+        right: 26px;
+    }
+}
+@media (max-width: 1040px)
+{   
+    /* header content */
     .first{
         display: grid;
         grid-template-columns: repeat(2,220px);
-        padding-top: 200px;
+        padding-top: 123px;
         width: 350Px;
         gap: 4px;
         margin-left: 70px;
@@ -541,8 +525,7 @@ border: 3px solid rgb(255, 255, 255);
     
     .bnt-pg1{
         display: grid;
-        grid-template-columns: repeat(3,
-        78px);
+        grid-template-columns: repeat(3,78px);
         margin-left: 12vw;
         gap: 10px;
     }
@@ -564,9 +547,7 @@ border: 3px solid rgb(255, 255, 255);
         box-shadow: 0 0 35px var(--clr);
         border: 1px solid white;
         color: #fff;
-
-    }
-    
+    } 
     .learn-more{
         margin-top: 50px;
         grid-column: 2/4;
@@ -586,85 +567,38 @@ border: 3px solid rgb(255, 255, 255);
         color: #fff;
         background: transparent;
     }
-  
-    .add-collection{
-        font-size:  22px;
-        text-align: center;
-        margin-bottom: 8px;
 
-    }
-    .add-collection h2{
-           
-            text-align: center;
-    }
+    /* service */
     .service{
         width: 100%;
     }   
-    .service img {
-        margin-left: 8%;
-        margin-top: 20px;
-    }
-    
-    .content-box{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(340px,auto));
-        margin-top: 50px;
-        margin-left: 50px;
-        width: 95%;
-        margin-bottom: 140px;
-     }
-     .img-tchach{
-        width: 90%;
-        margin: 0px 20Px 0px 0px;
-     }
-     .service .heading{
-        width: 90%;
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 22px;
-        padding-top: 25px;
-        margin: 88px auto;
-        color: #fff;
-     }
-     .heading h3{
+    /* heading */
+    .heading h3{
         font-size: 27px;
      }
-     .heading p {
+    .heading p {
         width: 90%;
         font-size: 14px;
     }
-     .cards{
-       width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        column-gap: 0rem;
-        margin: 1em 0 4em 0;
-    }
-    .box{
-        min-width: 300px;
-        height: 420px;
-        flex-grow: 1;
-    }
+    /* cards */
     .card{
         width: 280px;
     }
-    .card h3{
-        font-size: 14px;
-    }
-    .card p{
-        font-size: 8px
-    }
-    .tswira{
+    .gift{
         width: 80px;
     }
+    /* info */
     .info{
         width: 100%;
+        min-height: 265px;
+        margin-bottom: 40px;
     }
     .info-nft{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        column-gap: 162px;
         margin-bottom: 40px;
     }
     .info-nft p{
@@ -674,17 +608,10 @@ border: 3px solid rgb(255, 255, 255);
     }
     .info-nft img{
         height: 220px;
-        
+        margin-top: 0px;
     }
-    .foooter-content h3{
-        font-size: 18px;
-    }
-    .footer-content img {
-        width: 94px;
-        height: 143px;
-    }
-    .footer-content h3 {
-        
+     /* footer */
+     .footer-content h3 {
         width: 122px;
         height: 30px;
         font-size: 16px;
@@ -692,68 +619,20 @@ border: 3px solid rgb(255, 255, 255);
     .footer-content p {
         font-size: 14px;
     }
-
+    .footer-content img {
+        width: 94px;
+        height: 143px;
+    }   
 }
 
-    
 @media (max-width: 1003px){
-   
     .card p {
         width: 259px;
     }
-    .content-box {
-        margin-top: 50px;
-        margin-left: 63px;
-        width: 90%;
-        column-gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(319px,auto));
-    }
-    
-}
-@media (max-width: 833px){
-    .content-box {
-        margin-left: 9%;
-        width: 86%;
-    }
-}
-@media (max-width: 751px){
-    .content-box {
-        margin-left: 33%;
-        width: 64%;
-    }
 }
 @media (max-width: 740px){
-     .info-nft p {
-        width: 288px;
-        font-size: 10px;
-        margin-top: 73px;
-    }
-    
-    .box{
-        min-width: 300px;
-        height: 400px;
-        margin-left: 10px;
-    }
-    .content-box{
-        display: grid;
-        grid-template-columns: repeat(1,240px);
-        row-gap: 50px;
-        column-gap: 50px;
-        margin-top: 20px;
-        margin-left: 22%;
-        width: 260px;
-        margin-bottom: 140px;
-     }
-     .card p {
-        font-size: 8px;
-        width: 244Px;
-    }
-    .info-nft img {
-        height: 156px;
-        margin-top: 80px;
-        column-gap: 30px;
-    }
-     .footer-content {
+    /*----FOOTER----*/
+    .footer-content {
         width: 100%;
         gap: 20px;
     }
@@ -761,13 +640,9 @@ border: 3px solid rgb(255, 255, 255);
         width: 68px;
         height: 143px;
     }
-    .info {
-        height: 321px;
-    }
 }
-
-
 @media screen and (max-width: 650px) {
+    /* navbar mobil */
     header .resp-ico{
       display: block;
       padding-right: 20px;
@@ -799,14 +674,10 @@ border: 3px solid rgb(255, 255, 255);
   .NAVBAR a{
     color: #ffffff;
   }
-  }
+}
 
 @media (max-width: 550px) {
-   
-     .container{
-        width: 100%;
-        height: 700px;
-     }
+    /* container */
      .first{
         display: grid;
         grid-template-columns: repeat(1,320px);
@@ -815,11 +686,12 @@ border: 3px solid rgb(255, 255, 255);
         margin-left: 20px;
         width: 340px;
      }
-     .Second{display: grid;
-     grid-template-columns: repeat(1,320px);
-     padding-top: 50px;
-     gap: 4px;
-     margin-left: 40px;
+     .Second{
+        display: grid;
+        grid-template-columns: repeat(1,320px);
+        padding-top: 50px;
+        gap: 4px;
+        margin-left: 40px;
      }
      .bnt-pg1 {
         width: 265px;
@@ -830,81 +702,24 @@ border: 3px solid rgb(255, 255, 255);
         gap: 10px;
         margin-top: 40px;
      }
-
+     /* add collection */
      .add-collection{
             font-size:  20px;
             text-align: center;
-            margin-bottom: 8px;
-           
-     }
-     .service img {
-        margin-left: 12%;
-        width: 336px;
-        margin-top: 0px;
-        margin-right: 0px;
-    }
-     .service .heading{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 340px;
-     }
-     .heading h3{
-        font-size: 14px;
-        margin-left: 70px;
-     }
-     .heading p{
-        font-size: 14px;
-        width: 260px;
-        margin-left: 70px;
-     }
-     
-     .info-nft p {
-        width: 340px;
-        font-size: 12px;
-        margin-top: 89px;
-    }
-     
-     .add-collection{
-       text-align: center;
-     
-       font-size: 18px;
+            margin-bottom: 8px;    
      }
      .add-collection h2{
         margin-bottom: 15px;
      }
-     .card{
-        margin-left: 130px;
-     }
-     .card img{
-        width: 249px;
-        margin-left: 0px;
-     }
-     .cards{
-        width: 355px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 1.5em;
-        margin: 1em 0 4em 0;
+     /* box collection */
+     .box{
+        min-width: 280px;
+        height: 400px;
+        margin-left: 10px;
     }
-    .info-nft{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
-        height: 500Px;
-    }
-    
-    .info-nft p{
-        width: 290px;
-        font-size: 16px;
-        margin-top: 0px;
-        margin-left: 50px;
-    }
-    .info-nft img{
-        height: 180px;
-        width: 300px;
+     /* info */
+     .info {
+        height: 374px;
     }
     footer{
         margin-top: 343px;
@@ -916,62 +731,20 @@ border: 3px solid rgb(255, 255, 255);
         flex-direction: column;
         gap: 20px;
     }
-    .box{
-        min-width: 300px;
-        height: 400px;
-        margin-left: 10px;
-    }
-    .box{
-        max-width: 320px;
-        height: 390px;
-        margin-left: 10px;
-    }
-    .content-box{
-        display: grid;
-        grid-template-columns: repeat(1,240px);
-        row-gap: 50px;
-        column-gap: 50px;
-        margin-top: 20px;
-        margin-left: 10%;
-        max-width: 260px;
-        margin-bottom: 140px;
-     }
-     .add-collection{
-        text-align: center;
-     }
+    
+ 
 }
- @media (max-width: 398px) {
-    .des-buynft {
-        font-size: 16px;
-    }
-    .buy {
-        font-size: 40px;
-    }
-    .des-buynft {
-        font-size: 16px;
-    }
-    .buy {
-        font-size: 40px;
-    }
-   
+@media (max-width: 398px) {
     .Second{
         grid-template-columns: repeat(1,299px);
         width: 320px;
     }
-    .content-box{
-        margin-left: 6%;
+    .buy {
+        font-size: 40px;
     }
-    .box{
-        max-width: 280px;
-        height: 390px;
-        margin-left: 10px;
-    }
-    
-    .box img {
-        width: 300px;
-        height: 390px;
-        border-radius: 4px;
-    }
+    .des-buynft {
+        font-size: 16px;
+    } 
     .add-collection{
         text-align: center;
     }
@@ -980,39 +753,11 @@ border: 3px solid rgb(255, 255, 255);
     }
     .box .btn_remove-C {
         right: 40px;
-    }
-    
-    .service img {
-        margin-left: 4%;
-        width: 307px;
-    }
-    .cards {
-        width: 347px;
-    }
-    .info-nft{
-        margin-left: 20px;
-    }
+    }  
     .info-nft p {
         width: 251px;
-        font-size: 10px;
+        font-size: 18px;
     }
-    .info-nft img {
-        margin-left: 0px;
-    }
-    .img-tchach{
-      width: 302px;
-    }
-    .cards img{
-        margin-left: 4%;
-        width: 207px;
-    }
-    .cards {
-        width: 254px;
-    }
-    .card p {
-        font-size: 8px;
-        width: 225Px;
-    } 
     .footer .copyright p {
         text-align: center;
         color: #fff;
