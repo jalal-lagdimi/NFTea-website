@@ -63,10 +63,6 @@ $select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");
     </section>
 
 
-
-
-
-
     <!-- foooter -->
     <footer>
         <section class="footer">

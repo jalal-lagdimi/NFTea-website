@@ -35,8 +35,7 @@ $select = mysqli_query($conn, "SELECT * FROM collection");
     <!--First page of Home-->
     <section class="container">
         <div class="first">
-            <div class="des-buynft">Trade NFTs from major marketplaces with 0% Rarible fees on aggregated listings. Earn RARI rewards.</div>
-
+            <div class="des-buynft">EVERY TREE IN THE FOREST KNOWS ABOUT CREATING VALUE AND ABOUT RECIPROCITY</div>
             <div class="buy">BUY NFTS</div>
         </div>
         <div class="Second">
@@ -46,9 +45,6 @@ $select = mysqli_query($conn, "SELECT * FROM collection");
         <div class="bnt-pg1">
             <button class="buy-nft">BUY NFTS</button>
             <button class="learn-more" style="--clr:#1e9bff">LEARN MORE</button>
-            <!-- <div class="header-img">
-                    <img  class="nonous" src="./img/header img.png" alt="header-img">
-                    </div> -->
         </div>
 
     </section>
@@ -83,7 +79,7 @@ $select = mysqli_query($conn, "SELECT * FROM collection");
 
     </section>
     <section class="service">
-        <img src="img/img-deco1.png" alt="image dicorative" class="img-tchach">
+        <img src="img/img-deco1.png" alt="image dicorative" class="img-break">
         <div class="heading">
             <h3>What we actually do?</h3>
             <p>
@@ -105,14 +101,14 @@ $select = mysqli_query($conn, "SELECT * FROM collection");
                 <div class="light"></div>
                 <img src="img/add-collection.png" alt="image descriptive">
                 <h3>Create your collection</h3>
-                <p class="ketba">
+                <p>
                     NFT's ate transforming the way commerce is transacted
                 </p>
             </div>
             <div class="card">
                 <!--Geft-->
                 <div class="light"></div>
-                <img src="img/gift.png" alt="image descriptive" class="tswira">
+                <img src="img/gift.png" alt="image descriptive" class="gift">
                 <h3>Daily Geft NFTS</h3>
                 <p>
                     NFT's ate transforming the way commerce is transacted
@@ -122,7 +118,7 @@ $select = mysqli_query($conn, "SELECT * FROM collection");
     </section>
     <section class="info">
         <div class="info-nft">
-            <p>NFTs evolved from the ERC-721 standard. Developed by some of the same people responsible for the ERC-20 smart contract, ERC-721 defines the minimum interface—ownership details, security, and metadata—required for the exchange and distribution of gaming tokens. The ERC-1155 standard takes the concept further by reducing the transaction and storage costs required for NFTs and batching multiple types of non-fungible tokens into a single contract.</p>
+            <p>NFTs evolved from the ERC-721 standard. Developed by some of the same people responsible for the ERC-20 smart contract, ERC-721 defines the minimum interface—ownership details, security, and metadata—required for the exchange and distribution of gaming tokens. The ERC-1155 standard takes the concept further by reducing the transaction and storage costs required for NFTs and batching multiple types of non-fungible tokens.</p>
             <img src="img/Logo-nfts.png" alt="logo NFTS">
         </div>
     </section>

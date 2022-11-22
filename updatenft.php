@@ -56,10 +56,10 @@ if (isset($_POST['update_nft'])) {
 
         <form action="" method="POST" enctype="multipart/form-data" class="frm">
             <h1>UPDATE NFT</h1>
-            <input type="text" placeholder="enter new name" value="" <?php $row['nom']; ?> name="nft_name"> <br>
-            <input type="text" placeholder="enter new description" value="" <?php $row['description']; ?> name="nft_description"> <br>
-            <input type="number" placeholder="enter new price" value="" <?php $row['prix']; ?> name="nft_prix"> <br>
-            <input type="file" accept="image/jpeg, image/png image/jpg" value="" <?php $row['image']; ?> name="nft_image"> <br>
+            <input type="text" placeholder="enter new name"  <?php $row['nom']; ?> name="nft_name"> <br>
+            <input type="text" placeholder="enter new description"  <?php $row['description']; ?> name="nft_description"> <br>
+            <input type="number" placeholder="enter new price"  <?php $row['prix']; ?> name="nft_prix"> <br>
+            <input type="file" accept="image/jpeg, image/png image/jpg"  <?php $row['image']; ?> name="nft_image"> <br>
             <input type="submit" class="btn" name="update_nft" value="update nft">
             <a href="index.php">GO BACK</a>
         </form>
