@@ -55,8 +55,8 @@ $select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");
                     <h3> NAME : <?= $val['nom'] ?></h3>
                     <p>description : <?= $val['description'] ?></p>
                     <h4>PRICE : <?= $val['prix'] ?> Ethereum</h4>
-                    <a href="deletenft.php?id=<?= $val['id'] ?>" name="deletenft" class="btn_remove-N">Remove</a>
-                    <a href="updatenft.php?id=<?= $val['id'] ?>" name="update" class="btn-update-N">Update</a>
+                    <a href="deletenft.php?id=<?= $val['id'] ?>&idcoll=<?=$coln?>" name="deletenft" class="btn_remove-N">Remove</a>
+                    <a href="updatenft.php?id=<?= $val['id'] ?>&idcoll=<?=$coln?>" name="update" class="btn-update-N">Update</a>
                 </div>
             <?php }; ?>
         </div>

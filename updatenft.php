@@ -2,6 +2,7 @@
 
 @include 'connect.php';
 $id = $_GET['id'];
+$idcoll =$_GET['idcoll'];
 
 if (isset($_POST['update_nft'])) {
 
@@ -61,7 +62,7 @@ if (isset($_POST['update_nft'])) {
             <input type="number" placeholder="enter new price"  <?php $row['prix']; ?> name="nft_prix"> <br>
             <input type="file" accept="image/jpeg, image/png image/jpg"  <?php $row['image']; ?> name="nft_image"> <br>
             <input type="submit" class="btn" name="update_nft" value="update nft">
-            <a href="index.php">GO BACK</a>
+            <a href="NFTs.php?id=<?= $idcoll ?>">GO BACK</a>
         </form>
     </div>
 </body>
