@@ -36,7 +36,7 @@ $select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");
     <section class="containerr">
         <div class="NFT-content">
             <h3>OUR NFTs</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis omnis accusamus,eius laboriosam beatae. Rerum pariatur hic optio, quam assumenda .</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis omnis accusamus,eius laboriosam beatae. Rerum pariatur hic optio.</p>
         </div>
         </div>
     </section>

@@ -5,14 +5,12 @@
   list-style: none;
   scroll-behavior: smooth;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  
+  font-family: Arial, Helvetica, sans-serif; 
 }
 body{
   min-height: 100vh;
   overflow-x: hidden;
   background: #350c39;
-
 }
 /* ****************** HEADER ****************** */
 header{
@@ -63,31 +61,31 @@ header .resp-ico{
  /* ******************* NFTS BODY ******************* */
  .NFTs-body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(307px, auto));
   text-align: center;
-  margin-left: 98px;
+  justify-content: center;
   margin-bottom: 50px;
 }
-
+ .containerr{
+  width: 100%;
+  text-align: center;
+ }
   .NFT-content{
-    width: 100%;
     padding-top: 10%;
-    justify-content: center;
-    padding-left: 30%;
+    margin: 0 auto;
   }
   .NFT-content h3{
-    width: 500px ;
-    text-align: center;
+    width: 500px;
      font-size: 50px;
      color: rgb(78, 142, 245);
-     
+     margin: inherit;
   }
   .NFT-content p{
      width: 500px ;
      font-size: 22px;
-     text-align: center;
      padding-top: 20px;
      color: #fff;
+     margin: inherit;
   }
 
   .box-nft img{
@@ -228,17 +226,6 @@ footer{
   left: 35%;
   padding-bottom: 12px; 
 }
-@media screen and (max-width: 1150px){
-.NFT-content h3{
-  width: 300px ;
-  font-size: 50px;
-  margin-left: 40px;
-}
-.NFT-content p{
-  width: 400px ;
-  font-size: 20px;
-}
-}
 @media screen and (max-width: 1010px){
   .foooter-content h3{
     font-size: 18px;
@@ -257,35 +244,28 @@ footer{
   }
   
 }
-@media screen and (max-width: 1000px){
-  .NFT-content{
-    display: block;
-  }
-}
-@media screen and (max-width: 750px){
 
-   .NFT-content h3{
-    width: 200px ;
-    text-align: center;
-     font-size: 40px;
-     padding-top: 50px;
-     margin-left: 25px;
-     
+
+@media screen and (max-width: 750px){
+  .NFT-content h3{
+    padding-top: 40px;
+    width: 230px;
+    font-size: 30px;
   }
   .NFT-content p{
-     width: 250px ;
-     font-size: 15px;
-     text-align: center;
-     padding-top: 15px;
-  }
+    width: 330px;
+    size: 15px;
+    text-align: center;
+    padding-top: 15px;
+  } 
   .footer-content {
     width: 100%;
     gap: 20px;
-}
-.footer-content img {
+  }
+  .footer-content img {
     width: 68px;
     height: 143px;
-}
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -296,29 +276,29 @@ footer{
     font-size: 50px;
     cursor: pointer; 
 }
-.NAVBAR {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0; 
-  background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  right: -100%;   
-}
-.NAVBAR .clo-ico{
-  display: block;
-  color: #ffffff;
-  position: absolute;
-  right: 10px;
-  font-size: 40px;
-  top: 10px;
-  cursor: pointer;
-}
-.NAVBAR a{
-  color: #ffffff;
-}
+  .NAVBAR {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    background-image: repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(0deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(83,0%,53%,0.03) 0px, hsla(83,0%,53%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(40, 24, 113),rgb(159, 96, 150));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: -100%;   
+  }
+  .NAVBAR .clo-ico{
+    display: block;
+    color: #ffffff;
+    position: absolute;
+    right: 10px;
+    font-size: 40px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .NAVBAR a{
+    color: #ffffff;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -331,43 +311,5 @@ footer{
     width: 100%;
     flex-direction: column;
     gap: 20px;
-}
-
-}
-@media screen and (max-width: 500px) {
-  .NFT-content h3{
-    width: 200px ;
-    text-align: center;
-     font-size: 40px;
-     padding-top: 50px;
-     margin-left: 0px;
-    
   }
-  .NFT-content p{
-     width: 200px ;
-     font-size: 13px;
-     text-align: center;
-     padding-top: 15px;
-  } 
-  .NFTs-body{
-    margin-left: 15%;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .NFT-content h3{
-     width: 150px ;
-     font-size: 30px;
-     padding-top: 50px;
-     margin-left: 0px;  
-  }
-  .NFT-content p{
-     width: 180px ;
-     font-size: 10px;
-     padding-right: 30px;  
-  } 
-  .NFTs-body{
-    margin-left: 9%;
-  }
-
 }
