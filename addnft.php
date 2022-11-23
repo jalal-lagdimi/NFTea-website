@@ -6,7 +6,9 @@ if (isset($_POST['add_nft'])) {
     $nft_name = $_POST['nft_name'];
     $description = $_POST['description'];
     $prix = $_POST['prix'];
+    if(isset($_POST['select_collection'])){
     $id_collection = $_POST['select_collection'];
+    }
     $nft_image = $_FILES['nft_image']['name'];
     $nft_image_tmp_name = $_FILES['nft_image']['tmp_name'];
     $nft_image_folder = 'img/' . $nft_image;
