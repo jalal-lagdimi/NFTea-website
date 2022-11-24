@@ -1,5 +1,5 @@
 <?php
-require("connect.php");
+include("connect.php");
 $select = mysqli_query($conn, "SELECT *FROM nft");
 ?>
 

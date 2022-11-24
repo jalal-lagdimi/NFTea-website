@@ -1,5 +1,5 @@
 <?php
-@include 'connect.php';
+include 'connect.php';
 
 if (isset($_POST['add_nft'])) {
 
@@ -62,9 +62,8 @@ if (isset($_POST['add_nft'])) {
 
                 $sql = "SELECT * FROM `collection`";
                 $result = mysqli_query($conn, $sql);
-                $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-                foreach ($rows as $row) {
+                foreach ($result as $row) {
                 ?>
                     <option value="<?= $row['id'] ?>"> <?= $row['nom'] ?> </option>
 

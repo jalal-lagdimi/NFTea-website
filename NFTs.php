@@ -1,6 +1,6 @@
 <?php
 
-@include 'connect.php';
+include 'connect.php';
 $coln = $_GET['id'];
 $select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");
 

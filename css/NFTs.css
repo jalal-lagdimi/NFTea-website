@@ -64,6 +64,7 @@ header .resp-ico{
   grid-template-columns: repeat(auto-fit, minmax(307px, auto));
   text-align: center;
   justify-content: center;
+  column-gap: 30px;
   margin-bottom: 50px;
 }
  .containerr{

@@ -1,5 +1,5 @@
 <?php
-        include_once 'connect.php';
+        include 'connect.php';
        
         $id =$_GET['id'];
         $select=mysqli_query($conn,"DELETE FROM collection WHERE id = $id");
