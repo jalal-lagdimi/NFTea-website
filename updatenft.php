@@ -51,15 +51,15 @@ if (isset($_POST['update_nft'])) {
         }
         ?>
         <?php
-        $select = mysqli_query($conn, "SELECT * FROM nft");
+        $select = mysqli_query($conn, "SELECT * FROM nft WHERE id=$id");
         $row = mysqli_fetch_assoc($select);
         ?>
 
         <form action="" method="POST" enctype="multipart/form-data" class="frm">
             <h1>UPDATE NFT</h1>
-            <input type="text" placeholder="enter new name"  <?php $row['nom']; ?> name="nft_name"> <br>
-            <input type="text" placeholder="enter new description"  <?php $row['description']; ?> name="nft_description"> <br>
-            <input type="number" placeholder="enter new price"  <?php $row['prix']; ?> name="nft_prix"> <br>
+            <input type="text" value="<?php echo $row['nom']?>"  <?php $row['nom']; ?> name="nft_name"> <br>
+            <input type="text" value="<?php echo $row['description']?>"  <?php $row['description']; ?> name="nft_description"> <br>
+            <input type="number" value="<?php echo $row['prix']?>"  <?php $row['prix']; ?> name="nft_prix"> <br>
             <input type="file" accept="image/jpeg, image/png image/jpg"  <?php $row['image']; ?> name="nft_image"> <br>
             <input type="submit" class="btn" name="update_nft" value="update nft">
             <a href="NFTs.php?id=<?= $idcoll ?>">GO BACK</a>
