@@ -1,9 +1,7 @@
 <?php
-<<<<<<< HEAD
+
    include 'connect.php';
-=======
-include 'connect.php';
->>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
+
 
 if (isset($_POST['add_nft'])) {
 
@@ -61,17 +59,11 @@ if (isset($_POST['add_nft'])) {
             <label>choose collection</label>
             <select name="select_collection">
                 <?php
-<<<<<<< HEAD
+
                         $sql = "SELECT * FROM `collection`";
                         $result = mysqli_query($conn, $sql);
                     foreach ($result as $row) {
-=======
 
-                $sql = "SELECT * FROM `collection`";
-                $result = mysqli_query($conn, $sql);
-
-                foreach ($result as $row) {
->>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
                 ?>
                         <option value="<?= $row['id'] ?>"> <?= $row['nom'] ?> </option>
                 <?php

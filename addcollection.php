@@ -1,9 +1,7 @@
 <?php
-<<<<<<< HEAD
+
     @include 'connect.php';
-=======
-include 'connect.php';
->>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
+
 
 if (isset($_POST['add_collection'])) {
     $collection_name = $_POST['collection_name'];
