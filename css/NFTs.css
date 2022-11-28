@@ -59,24 +59,12 @@ header .resp-ico{
 }
 
  /* ******************* NFTS BODY ******************* */
-<<<<<<< HEAD
+
  
  .containerr{
   width: 100%;
   text-align: center;
-=======
- .NFTs-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(307px, auto));
-  text-align: center;
-  justify-content: center;
-  column-gap: 30px;
-  margin-bottom: 50px;
-}
- .containerr{
-  width: 100%;
-  text-align: center;
->>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
+
  }
   .NFT-content{
     padding-top: 10%;
@@ -329,11 +317,8 @@ footer{
     flex-direction: column;
     gap: 20px;
   }
-<<<<<<< HEAD
+
 }
 
 
   
-=======
-}
->>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
