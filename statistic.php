@@ -1,9 +1,8 @@
 <?php
 include("connect.php");
-<<<<<<< HEAD
+
 $select = mysqli_query($conn, "SELECT * FROM nft");
-=======
->>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
+
 ?>
 
 <?php
