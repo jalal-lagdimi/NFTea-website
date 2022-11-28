@@ -13,6 +13,8 @@ $select = mysqli_query($conn, "SELECT * FROM collection");
     <title>NFTea</title>
     <link rel="stylesheet" href="./css/Collection.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta name="description" content="Site de vente NFT">
+    <meta name="keyword" content="NFT - NFTea website - buy nft -  ">
     <script defer src="main.js"></script>
     <script defer src="logic.js"></script>
 
@@ -149,7 +151,7 @@ $select = mysqli_query($conn, "SELECT * FROM collection");
                     </ul>
                 </div>
                 <div>
-                    <img src="./img/footer-img.jpg" alt="">
+                    <img src="./img/footer-img.jpg" alt="image footer">
                 </div>
             </div>
             <div class="copyright">

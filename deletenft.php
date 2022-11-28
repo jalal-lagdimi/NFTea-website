@@ -5,5 +5,4 @@
         $id =$_GET['id'];
         mysqli_query($conn,"DELETE FROM nft WHERE id = $id");
         header('Location:NFTs.php?id='.$idcoll);
-       
 ?>

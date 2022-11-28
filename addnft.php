@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
+   include 'connect.php';
+=======
 include 'connect.php';
+>>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
 
 if (isset($_POST['add_nft'])) {
 
@@ -7,7 +11,7 @@ if (isset($_POST['add_nft'])) {
     $description = $_POST['description'];
     $prix = $_POST['prix'];
     if(isset($_POST['select_collection'])){
-    $id_collection = $_POST['select_collection'];
+        $id_collection = $_POST['select_collection'];
     }
     $nft_image = $_FILES['nft_image']['name'];
     $nft_image_tmp_name = $_FILES['nft_image']['tmp_name'];
@@ -16,11 +20,11 @@ if (isset($_POST['add_nft'])) {
     if (empty($nft_name) || empty($description) || empty($nft_image) || empty($id_collection) || empty($prix)) {
         $message[] = 'FILL OUT ALL';
     } else {
-        $insert = "INSERT INTO nft (nom,description,prix,image,idcollection) VALUES('$nft_name','$description','$prix','$nft_image','$id_collection')";
+        $insert = "INSERT INTO nft (nom,description,prix,image,idcollection) VALUES ('$nft_name','$description','$prix','$nft_image','$id_collection')";
         $upload = mysqli_query($conn, $insert);
         if ($upload) {
             move_uploaded_file($nft_image_tmp_name, $nft_image_folder);
-            $message[] = 'NEW COLLECTION ADDED SUCCESSFULLY';
+            $message[] = 'NEW NFT ADDED SUCCESSFULLY';
         } else {
             $message[] = 'NEW COLLECTION NOT ADDED';
         }
@@ -41,38 +45,39 @@ if (isset($_POST['add_nft'])) {
 <body>
     <div class="allform">
         <?php
-
-        if (isset($message)) {
-            foreach ($message as $message) {
-                echo '<span class="message">' . $message . '</span>';
+            if (isset($message)) {
+                foreach ($message as $message) {
+                    echo '<span class="message">' . $message . '</span>';
+                }
             }
-        }
         ?>
-
-
-        <form action=" " method="POST" enctype="multipart/form-data" class="frm">
+        
+        <form action="" method="POST" enctype="multipart/form-data" class="frm">
             <h1>ADD NEW NFT</h1>
-            <input type="text" placeholder="enter name" name="nft_name"> <br>
-            <input type="text" placeholder="enter description" name="description"> <br>
+            <input type="text" placeholder="Enter name" name="nft_name"> <br>
+            <input type="text" placeholder="Enter description" name="description"> <br>
             <input type="number" placeholder="Price (Ethereum)" name="prix"> <br>
             <input type="file" accept="image/jpeg, image/png image/jpg" name="nft_image"> <br>
             <label>choose collection</label>
             <select name="select_collection">
                 <?php
+<<<<<<< HEAD
+                        $sql = "SELECT * FROM `collection`";
+                        $result = mysqli_query($conn, $sql);
+                    foreach ($result as $row) {
+=======
 
                 $sql = "SELECT * FROM `collection`";
                 $result = mysqli_query($conn, $sql);
 
                 foreach ($result as $row) {
+>>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
                 ?>
-                    <option value="<?= $row['id'] ?>"> <?= $row['nom'] ?> </option>
-
+                        <option value="<?= $row['id'] ?>"> <?= $row['nom'] ?> </option>
                 <?php
-                }
-                 ?>
+                    }
+                ?>
             </select>
-
-
             <input class="btn" type="submit" name="add_nft" value="add nft">
             <a href="index.php">GO BACK</a>
         </form>

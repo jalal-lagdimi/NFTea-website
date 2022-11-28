@@ -34,12 +34,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
     border: 1px solid #ff00d0;
     border-radius: 10px;
     background: #0b185a;
     box-shadow:  3px 5px 5px rgb(0, 0, 0);
-    padding-top: 10PX;
+    padding-top: 15PX;
 }
 
 ::placeholder {
@@ -50,7 +50,7 @@ body{
     color: rgb(255, 255, 255);
     font-size: 20px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .frm input{
     border: 2px solid #a400e6; 
@@ -72,6 +72,7 @@ body{
     width: 190px;
     height: 25px;
     margin-bottom: 10px;
+    margin-top: 20px;
     margin-left: 4px;  
 }
 .frm .btn:hover{
@@ -88,8 +89,9 @@ input[type="file"] {
     text-decoration: none;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    margin-top: 10px;
+    margin-top: 15px;
 }
+
 
 @media (max-width: 600px){
     .frm{

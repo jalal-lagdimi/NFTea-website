@@ -96,6 +96,7 @@ ALTER TABLE `nft`
 --
 -- Contraintes pour la table `nft`
 --
+
 ALTER TABLE `nft`
   ADD CONSTRAINT `nft_ibfk_1` FOREIGN KEY (`idcollection`) REFERENCES `collection` (`id`) ON DELETE CASCADE;
 COMMIT;

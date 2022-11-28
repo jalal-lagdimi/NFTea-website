@@ -1,9 +1,15 @@
 <?php
+<<<<<<< HEAD
+    @include 'connect.php';
+    $coln = $_GET['id'];
+    $select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");  
+=======
 
 include 'connect.php';
 $coln = $_GET['id'];
 $select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");
 
+>>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +22,7 @@ $select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");
     <title>NFTea</title>
     <link rel="stylesheet" href="./css/NFTs.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+    lin
 </head>
 
 <body>
@@ -88,7 +94,7 @@ $select = mysqli_query($conn, "SELECT * FROM nft WHERE idcollection = $coln");
                     </ul>
                 </div>
                 <div>
-                    <img src="./img/footer-img.jpg" alt="">
+                    <img src="./img/footer-img.jpg" alt="image footer">
                 </div>
             </div>
             <div class="copyright">

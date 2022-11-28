@@ -1,14 +1,16 @@
 <?php
+<<<<<<< HEAD
+    @include 'connect.php';
+=======
 include 'connect.php';
+>>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
 
 if (isset($_POST['add_collection'])) {
-
     $collection_name = $_POST['collection_name'];
     $artiste_name = $_POST['artiste_name'];
     $collection_image = $_FILES['collection_image']['name'];
     $collection_image_tmp_name = $_FILES['collection_image']['tmp_name'];
     $collection_image_folder = 'img/' . $collection_image;
-
     if (empty($collection_name) || empty($artiste_name) || empty($collection_image)) {
         $message[] = 'FILL OUT ALL';
     } else {
@@ -21,6 +23,7 @@ if (isset($_POST['add_collection'])) {
             $message[] = 'NEW COLLECTION NOT ADDED';
         }
     }
+    echo  $collection_image_tmp_name;
 };
 ?>
 <!DOCTYPE html>
@@ -37,16 +40,13 @@ if (isset($_POST['add_collection'])) {
 
 <body>
     <div class="allform">
-        <?php
-
+    <?php
         if (isset($message)) {
             foreach ($message as $message) {
                 echo '<span class="message">' . $message . '</span>';
             }
         }
-
-        ?>
-
+    ?>
         <form action="" class="frm" method="POST" enctype="multipart/form-data">
             <h1>ADD NEW COLLECTION</h1>
             <input type="text" placeholder="Enter collection name" name="collection_name"> <br>

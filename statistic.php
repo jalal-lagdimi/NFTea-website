@@ -1,17 +1,21 @@
 <?php
 include("connect.php");
+<<<<<<< HEAD
+$select = mysqli_query($conn, "SELECT * FROM nft");
+=======
+>>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
 ?>
 
 <?php
-$total = mysqli_query($conn, "SELECT COUNT(*) as total from nft");
+    $total = mysqli_query($conn, "SELECT COUNT(*) as total from nft");
 
-$max = "SELECT * FROM nft WHERE prix in (SELECT MAX(prix) FROM nft)";
-$maxnft = mysqli_query($conn, $max);
+    $max = "SELECT * FROM nft WHERE prix in (SELECT MAX(prix) FROM nft)";
+    $maxnft = mysqli_query($conn, $max);
 
-$min = "SELECT * FROM nft WHERE prix in (SELECT MIN(prix) FROM nft)";
-$minnft = mysqli_query($conn, $min);
+    $min = "SELECT * FROM nft WHERE prix in (SELECT MIN(prix) FROM nft)";
+    $minnft = mysqli_query($conn, $min);
 
-$data = mysqli_fetch_assoc($total);
+    $data = mysqli_fetch_assoc($total);
 ?>
 
 <!DOCTYPE html>
@@ -60,7 +64,7 @@ $data = mysqli_fetch_assoc($total);
 
     <section class="nft-stc">
         <?php
-        while ($p = mysqli_fetch_assoc($maxnft)) {
+            while ($p = mysqli_fetch_assoc($maxnft)) {
         ?>
 
             <div class="box-nftg">
@@ -114,7 +118,7 @@ $data = mysqli_fetch_assoc($total);
                     </ul>
                 </div>
                 <div>
-                    <img src="./img/footer-img.jpg" alt="">
+                    <img src="./img/footer-img.jpg" alt="image footer">
                 </div>
             </div>
             <div class="copyright">

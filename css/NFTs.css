@@ -8,7 +8,6 @@
   font-family: Arial, Helvetica, sans-serif; 
 }
 body{
-  min-height: 100vh;
   overflow-x: hidden;
   background: #350c39;
 }
@@ -18,6 +17,7 @@ header{
   float: right;
   width: 100%;
   height: 60px;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,6 +59,12 @@ header .resp-ico{
 }
 
  /* ******************* NFTS BODY ******************* */
+<<<<<<< HEAD
+ 
+ .containerr{
+  width: 100%;
+  text-align: center;
+=======
  .NFTs-body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(307px, auto));
@@ -70,6 +76,7 @@ header .resp-ico{
  .containerr{
   width: 100%;
   text-align: center;
+>>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
  }
   .NFT-content{
     padding-top: 10%;
@@ -89,6 +96,15 @@ header .resp-ico{
      margin: inherit;
   }
 
+  .NFTs-body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(307px, auto));
+    text-align: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 50px;
+  }
   .box-nft img{
      width: 300px;
      height: 350px;
@@ -313,4 +329,11 @@ footer{
     flex-direction: column;
     gap: 20px;
   }
+<<<<<<< HEAD
 }
+
+
+  
+=======
+}
+>>>>>>> 0f4592049ed0ad308aaef9b4bb2d7a20616b1b3e
